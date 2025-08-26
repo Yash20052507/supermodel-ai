@@ -1,0 +1,25 @@
+{
+  "name": "supermodel-ai",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && mkdirp dist && copyfiles index.html dist/ && copyfiles public/**/* dist/ && esbuild index.tsx --bundle --outfile=dist/index.js --define:process.env.NODE_ENV='\"production\"' --minify"
+  },
+  "dependencies": {
+    "@google/genai": "^1.14.0",
+    "@supabase/supabase-js": "^2.45.1",
+    "framer-motion": "^11.3.12",
+    "lucide-react": "^0.542.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "copyfiles": "^2.4.1",
+    "esbuild": "^0.23.0",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.4.5"
+  }
+}

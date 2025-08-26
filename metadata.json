@@ -1,0 +1,5 @@
+{
+  "name": "SuperModel AI",
+  "description": "A modular AI chat interface that allows users to enhance the AI's capabilities by installing and activating various 'Skill Packs'. The application features a dashboard, a real-time chat interface, a marketplace for discovering new skills, and session management.",
+  "requestFramePermissions": []
+}
